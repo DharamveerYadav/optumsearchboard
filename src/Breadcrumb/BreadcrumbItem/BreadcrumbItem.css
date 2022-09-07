@@ -1,0 +1,39 @@
+.breadcrumb-item+.breadcrumb-item::before {
+float: none;
+}
+
+.breadcrumb-item-custom{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.breadcrumb-item-custom__button {
+    color: #000 !important;
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+    padding: 0px 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    
+}
+
+.breadcrumb-item-custom__button--disabled {
+border-bottom: none;
+}
+
+.BreadcrumbItem button:active,
+.BreadcrumbItem button:visited,
+.BreadcrumbItem button:hover {
+    border-bottom-color: #000;
+}
+
+

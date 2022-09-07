@@ -1,0 +1,126 @@
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: rgb(15, 15, 15);
+  border-bottom: var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 31.25em) {
+  .header {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 11rem;
+  }
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 3.25rem;
+  margin-left: 2rem;
+}
+
+.logoText{
+    color: var(--color-primary);
+}
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 31.25em) {
+  .search {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+  }
+}
+.search__input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: #fff;
+  border: none;
+  padding: 0.7rem 2rem;
+  width: 90%;
+  transition: all 0.2s;
+  margin-right: -3.25rem;
+}
+.search__input:focus {
+  outline: none;
+  width: 100%;
+  background-color: var(--color-grey-light-3);
+}
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: var(--color-grey-light-4);
+}
+.search__input:focus + .search__button {
+  background-color: var(--color-grey-light-3);
+}
+.search__button {
+  border: none;
+  background-color: var(--color-grey-light-2);
+}
+.search__button:focus {
+  outline: none;
+}
+.search__button:active {
+  transform: translateY(2px);
+}
+.search__icon {
+  height: 2rem;
+  width: 2rem;
+  fill: var(--color-grey-dark-3);
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+}
+.user-nav > * {
+  padding: 0 2rem;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+/* .user-nav > *:hover {
+  background-color: var(--color-grey-light-2);
+} */
+.user-nav__icon-box {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+.user-nav__icon {
+  font-size: 2.5rem !important;
+  font-weight: 600;
+  color: var(--color-grey-dark-3);
+}
+.user-nav__iconText {
+  font-size: 10px;
+  color: var(--color-primary);
+}
+.user-nav__notification {
+  font-size: 0.7rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: red;
+  color: #fff;
+  position: absolute;
+  top: -0.5rem;
+  right: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

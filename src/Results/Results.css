@@ -1,0 +1,13 @@
+
+.results {
+    font-size: 1.4rem;
+    display: flex;
+    padding: 1rem 0;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line); }
+    @media only screen and (max-width: 56.25em) {
+      .detail {
+        padding: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .detail {
+        flex-direction: column; } }
