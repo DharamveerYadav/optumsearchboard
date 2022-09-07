@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from './Assests/img/logo.png';
-import user from './Assests/img/user.jpg';
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
