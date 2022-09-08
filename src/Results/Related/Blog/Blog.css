@@ -1,0 +1,19 @@
+.blog-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.icon-box > span {
+    margin-right: 10px;
+}
+
+.icon-box > svg {
+    margin-right: 5px;
+}
+
+.divider {
+    display: block;
+    border: 1px solid lightgray;
+    width: 100%;
+    margin: 2rem 0;
+}
