@@ -20,10 +20,25 @@
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 31.25em){
+  .logoContainer {
+    order: 1;
+    background-image: url(./Assests/img/logo.png);
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+  }
+}
 
 .logo {
   height: 3.25rem;
   margin-left: 2rem;
+}
+
+@media only screen and (max-width: 31.25em){
+  .logo {
+    display: none;
+  }
 }
 
 .logoText{
@@ -38,7 +53,7 @@
 }
 @media only screen and (max-width: 31.25em) {
   .search {
-    order: 1;
+    order: 3;
     flex: 0 0 100%;
     background-color: var(--color-grey-light-2);
   }
@@ -86,12 +101,22 @@
   display: flex;
   align-items: center;
 }
+
 .user-nav > * {
   padding: 0 2rem;
   cursor: pointer;
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 31.25em){
+  .user-nav {
+    order: 2
+  }
+  .user-nav > * {
+    padding: 0 0.5rem;
+  }
 }
 /* .user-nav > *:hover {
   background-color: var(--color-grey-light-2);
